@@ -4,10 +4,9 @@ import moment from '../../moment';
 localeModule('fi');
 
 test('parse', function (assert) {
-    var tests =
-            'tammikuu tammi_helmikuu helmi_maaliskuu maalis_huhtikuu huhti_toukokuu touko_kesäkuu kesä_heinäkuu heinä_elokuu elo_syyskuu syys_lokakuu loka_marraskuu marras_joulukuu joulu'.split(
-                '_'
-            ),
+    var tests = 'tammikuu tammi_helmikuu helmi_maaliskuu maalis_huhtikuu huhti_toukokuu touko_kesäkuu kesä_heinäkuu heinä_elokuu elo_syyskuu syys_lokakuu loka_marraskuu marras_joulukuu joulu'.split(
+            '_'
+        ),
         i;
     function equalTest(input, mmm, i) {
         assert.equal(
@@ -119,10 +118,9 @@ test('format ordinal', function (assert) {
 });
 
 test('format month', function (assert) {
-    var expected =
-            'tammikuu tammi_helmikuu helmi_maaliskuu maalis_huhtikuu huhti_toukokuu touko_kesäkuu kesä_heinäkuu heinä_elokuu elo_syyskuu syys_lokakuu loka_marraskuu marras_joulukuu joulu'.split(
-                '_'
-            ),
+    var expected = 'tammikuu tammi_helmikuu helmi_maaliskuu maalis_huhtikuu huhti_toukokuu touko_kesäkuu kesä_heinäkuu heinä_elokuu elo_syyskuu syys_lokakuu loka_marraskuu marras_joulukuu joulu'.split(
+            '_'
+        ),
         i;
     for (i = 0; i < expected.length; i++) {
         assert.equal(
@@ -134,10 +132,9 @@ test('format month', function (assert) {
 });
 
 test('format week', function (assert) {
-    var expected =
-            'sunnuntai su su_maanantai ma ma_tiistai ti ti_keskiviikko ke ke_torstai to to_perjantai pe pe_lauantai la la'.split(
-                '_'
-            ),
+    var expected = 'sunnuntai su su_maanantai ma ma_tiistai ti ti_keskiviikko ke ke_torstai to to_perjantai pe pe_lauantai la la'.split(
+            '_'
+        ),
         i;
     for (i = 0; i < expected.length; i++) {
         assert.equal(

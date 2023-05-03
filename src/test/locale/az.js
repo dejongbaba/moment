@@ -4,10 +4,9 @@ import moment from '../../moment';
 localeModule('az');
 
 test('parse', function (assert) {
-    var tests =
-            'yanvar yan_fevral fev_mart mar_Aprel apr_may may_iyun iyn_iyul iyl_Avqust avq_sentyabr sen_oktyabr okt_noyabr noy_dekabr dek'.split(
-                '_'
-            ),
+    var tests = 'yanvar yan_fevral fev_mart mar_Aprel apr_may may_iyun iyn_iyul iyl_Avqust avq_sentyabr sen_oktyabr okt_noyabr noy_dekabr dek'.split(
+            '_'
+        ),
         i;
     function equalTest(input, mmm, i) {
         assert.equal(
@@ -132,10 +131,9 @@ test('format ordinal', function (assert) {
 });
 
 test('format month', function (assert) {
-    var expected =
-            'yanvar yan_fevral fev_mart mar_aprel apr_may may_iyun iyn_iyul iyl_avqust avq_sentyabr sen_oktyabr okt_noyabr noy_dekabr dek'.split(
-                '_'
-            ),
+    var expected = 'yanvar yan_fevral fev_mart mar_aprel apr_may may_iyun iyn_iyul iyl_avqust avq_sentyabr sen_oktyabr okt_noyabr noy_dekabr dek'.split(
+            '_'
+        ),
         i;
     for (i = 0; i < expected.length; i++) {
         assert.equal(
@@ -147,10 +145,9 @@ test('format month', function (assert) {
 });
 
 test('format week', function (assert) {
-    var expected =
-            'Bazar Baz Bz_Bazar ertəsi BzE BE_Çərşənbə axşamı ÇAx ÇA_Çərşənbə Çər Çə_Cümə axşamı CAx CA_Cümə Cüm Cü_Şənbə Şən Şə'.split(
-                '_'
-            ),
+    var expected = 'Bazar Baz Bz_Bazar ertəsi BzE BE_Çərşənbə axşamı ÇAx ÇA_Çərşənbə Çər Çə_Cümə axşamı CAx CA_Cümə Cüm Cü_Şənbə Şən Şə'.split(
+            '_'
+        ),
         i;
     for (i = 0; i < expected.length; i++) {
         assert.equal(

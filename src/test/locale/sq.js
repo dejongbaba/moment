@@ -5,10 +5,9 @@ localeModule('sq');
 
 test('parse', function (assert) {
     var i,
-        tests =
-            'Janar Jan_Shkurt Shk_Mars Mar_Prill Pri_Maj Maj_Qershor Qer_Korrik Kor_Gusht Gus_Shtator Sht_Tetor Tet_Nëntor Nën_Dhjetor Dhj'.split(
-                '_'
-            );
+        tests = 'Janar Jan_Shkurt Shk_Mars Mar_Prill Pri_Maj Maj_Qershor Qer_Korrik Kor_Gusht Gus_Shtator Sht_Tetor Tet_Nëntor Nën_Dhjetor Dhj'.split(
+            '_'
+        );
 
     function equalTest(input, mmm, i) {
         assert.equal(
@@ -127,10 +126,9 @@ test('format ordinal', function (assert) {
 
 test('format month', function (assert) {
     var i,
-        expected =
-            'Janar Jan_Shkurt Shk_Mars Mar_Prill Pri_Maj Maj_Qershor Qer_Korrik Kor_Gusht Gus_Shtator Sht_Tetor Tet_Nëntor Nën_Dhjetor Dhj'.split(
-                '_'
-            );
+        expected = 'Janar Jan_Shkurt Shk_Mars Mar_Prill Pri_Maj Maj_Qershor Qer_Korrik Kor_Gusht Gus_Shtator Sht_Tetor Tet_Nëntor Nën_Dhjetor Dhj'.split(
+            '_'
+        );
 
     for (i = 0; i < expected.length; i++) {
         assert.equal(
@@ -143,10 +141,9 @@ test('format month', function (assert) {
 
 test('format week', function (assert) {
     var i,
-        expected =
-            'E Diel Die D_E Hënë Hën H_E Martë Mar Ma_E Mërkurë Mër Më_E Enjte Enj E_E Premte Pre P_E Shtunë Sht Sh'.split(
-                '_'
-            );
+        expected = 'E Diel Die D_E Hënë Hën H_E Martë Mar Ma_E Mërkurë Mër Më_E Enjte Enj E_E Premte Pre P_E Shtunë Sht Sh'.split(
+            '_'
+        );
 
     for (i = 0; i < expected.length; i++) {
         assert.equal(

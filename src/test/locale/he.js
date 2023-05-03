@@ -4,10 +4,9 @@ import moment from '../../moment';
 localeModule('he');
 
 test('parse', function (assert) {
-    var tests =
-            'ינואר ינו׳_פברואר פבר׳_מרץ מרץ_אפריל אפר׳_מאי מאי_יוני יוני_יולי יולי_אוגוסט אוג׳_ספטמבר ספט׳_אוקטובר אוק׳_נובמבר נוב׳_דצמבר דצמ׳'.split(
-                '_'
-            ),
+    var tests = 'ינואר ינו׳_פברואר פבר׳_מרץ מרץ_אפריל אפר׳_מאי מאי_יוני יוני_יולי יולי_אוגוסט אוג׳_ספטמבר ספט׳_אוקטובר אוק׳_נובמבר נוב׳_דצמבר דצמ׳'.split(
+            '_'
+        ),
         i;
     function equalTest(input, mmm, i) {
         assert.equal(
@@ -81,10 +80,9 @@ test('format', function (assert) {
 });
 
 test('format month', function (assert) {
-    var expected =
-            'ינואר ינו׳_פברואר פבר׳_מרץ מרץ_אפריל אפר׳_מאי מאי_יוני יוני_יולי יולי_אוגוסט אוג׳_ספטמבר ספט׳_אוקטובר אוק׳_נובמבר נוב׳_דצמבר דצמ׳'.split(
-                '_'
-            ),
+    var expected = 'ינואר ינו׳_פברואר פבר׳_מרץ מרץ_אפריל אפר׳_מאי מאי_יוני יוני_יולי יולי_אוגוסט אוג׳_ספטמבר ספט׳_אוקטובר אוק׳_נובמבר נוב׳_דצמבר דצמ׳'.split(
+            '_'
+        ),
         i;
     for (i = 0; i < expected.length; i++) {
         assert.equal(
@@ -96,10 +94,9 @@ test('format month', function (assert) {
 });
 
 test('format week', function (assert) {
-    var expected =
-            'ראשון א׳ א|שני ב׳ ב|שלישי ג׳ ג|רביעי ד׳ ד|חמישי ה׳ ה|שישי ו׳ ו|שבת ש׳ ש'.split(
-                '|'
-            ),
+    var expected = 'ראשון א׳ א|שני ב׳ ב|שלישי ג׳ ג|רביעי ד׳ ד|חמישי ה׳ ה|שישי ו׳ ו|שבת ש׳ ש'.split(
+            '|'
+        ),
         i;
     for (i = 0; i < expected.length; i++) {
         assert.equal(

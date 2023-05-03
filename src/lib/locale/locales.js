@@ -61,10 +61,12 @@ function chooseLocale(names) {
     }
     return globalLocale;
 }
-
+/*
+*  Prevent names that look like filesystem paths, i.e contain '/' or '\'
+*  @return boolean
+* */
 function isLocaleNameSane(name) {
-    // Prevent names that look like filesystem paths, i.e contain '/' or '\'
-    return name.match('^[^/\\\\]*$') != null;
+    return !!(name && name.match('^[^/\\\\]*$')) ;
 }
 
 function loadLocale(name) {
